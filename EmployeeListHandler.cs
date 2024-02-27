@@ -17,7 +17,6 @@ namespace PersonalRegisterLexicon2024
             foreach (var employee in employees)
             {
                 Console.WriteLine("|{0,-20}|{1,-20}|{2,-20}|", employee.Salary, employee.FirstName, employee.LastName);
-
             }
         }
         public void AddEmployee()
@@ -70,6 +69,8 @@ namespace PersonalRegisterLexicon2024
     public interface IEmployee
     {
         static List<Models.Employee> employees = new();
+        // Difficult to run tests on void functions.
+        // Im not sure what would be appropriate types to return.
         public void AddEmployee();
         public void ListEmployees();
     }
