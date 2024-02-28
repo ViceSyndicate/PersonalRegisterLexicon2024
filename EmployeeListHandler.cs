@@ -53,6 +53,11 @@ namespace PersonalRegisterLexicon2024
             }
             if (int.TryParse(input, out int result))
             {
+                if (result < 0)
+                {
+                    Console.WriteLine("Salary can't be less than 0!");
+                    return;
+                }
                 employee.Salary = result;
             }
             else

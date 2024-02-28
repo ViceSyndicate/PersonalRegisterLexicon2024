@@ -2,8 +2,6 @@
 {
     internal class Program
     {
-        
-
         static void Main(string[] args)
         {
             EmployeeListHandler employeeListHandler = new EmployeeListHandler();
